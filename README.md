@@ -70,24 +70,31 @@ Gameplay revolves around **typed commands**, each mapped to dedicated C# classes
 
 ---
 
-## 🎮 Commands
+## 🎮 Player Commands & Usage
 
-Common commands (exact spellings may vary by implementation):
+Below is a full list of supported **commands**, their **usage**, and **in-game purpose**.
 
-| Command | Description |
-|----------|-------------|
-| `look` | Describe the current room |
-| `move <direction>` | Move to an adjacent room |
-| `inventory` | Show your inventory |
-| `pickup <item>` | Pick up an item |
-| `drop <item>` | Drop an item |
-| `equip <item>` | Equip a weapon or item |
-| `unequip <item>` | Unequip the current item |
-| `use <item>` | Use a consumable or tool |
-| `talk <npc>` | Speak with an NPC |
-| `fight <npc>` | Initiate combat |
-| `craft <item>` | Craft an item from components |
-| `help` | List available commands |
+| Command | Usage Example | Description |
+|----------|---------------|-------------|
+| `move <direction>` | `move north` | Moves the player to a connected room (north, south, east, or west). |
+| `moveBack` | `moveBack` | Returns the player to the previous room in history. |
+| `pickup <itemName>` | `pickup key` | Adds the specified item to your inventory. |
+| `drop <itemName>` | `drop flashlight` | Removes an item from inventory and drops it in the current room. |
+| `checkinventory` | `checkinventory` | Lists all items in your inventory and their stats. |
+| `equip <itemName>` | `equip pistol` | Equips an item as a weapon or tool. |
+| `unequip <itemName>` | `unequip pistol` | Unequips the currently equipped weapon or tool. |
+| `use <itemName>` | `use medkit` | Uses a consumable item such as health packs or keys. |
+| `playerstats` | `playerstats` | Displays current player stats: health, shield, scrap, damage, weight, and weapon. |
+| `talk <npcName>` | `talk shopkeeper` | Interacts with an NPC. May open dialogue or a shop. |
+| `fight <npcName>` | `fight lurker` | Engages the specified NPC in combat. |
+| `craft <itemName>` | `craft crowbar` | Combines materials to create new tools or weapons. |
+| `teleport` | `teleport` | Teleports to unlocked stages after defeating certain bosses. |
+| `CRD` | `CRD` | Prints the description of your current room (Current Room Description). |
+| `LAR` | `LAR` | Lists all rooms in the current world/stage. |
+| `LAC` | `LAC` | Lists all available commands in-game (shows this list). |
+| `LSS` | `LSS` | Lists all stage states and boss statuses. |
+| `exit` | `exit` | Quits the game safely. |
+
 
 > 💡 **Tip:** Explore, gather, and craft early to survive tougher encounters.
 
