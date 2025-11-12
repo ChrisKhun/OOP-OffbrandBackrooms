@@ -1,0 +1,362 @@
+    Groups Names
+ --------------------
+| Alexander Wilson   |
+| Christopher Khun   |
+ --------------------
+
+
+Time Log 
+--------------------------------------------------------------------------------------------
+Chris Khun -
+  9/30/24,  2:15 pm, 1 hour    , Project Planning
+  10/1/24,  11:25pm, 30 minutes, Inferface
+  10/2/24,  2:00 pm, 1 hour    , Created and worked on Player & PlayerI
+            3:25 pm, 40 minutes, Worked on creating classes
+  10/3/24,  3:30 pm, 2 hours   , Worked on Interface, created commands, and fixed the parser
+  10/4/24,  12:25am, 1 hour    , Tweaked interface
+  10/9/24,  2:00 pm, 50 minutes, Worked on player & game creation
+  10/11/24, 2:00 pm, 50 minutes, Worked on player & game creation 
+  10/12/24, 11:25am, 45 minutes, created room classes and started on the logic
+  10/14/24, 2:05 pm, 50 minutes, room creation classes
+  10/18/24, 1:52 pm, 1 hour    , created room data types and room class
+  10/20/24, 11:35pm, 45 minutes, worked on logic for room creation
+  10/21/24, 5:35 am, 30 minutes, created function for random room creation
+            2:00 pm, 50 minutes, worked on function for room creation
+  10/22/24, 11:16pm, 20 minutes, created exits and direction for them
+  10/23/24, 2:01 pm, 50 minutes, worked on world creation and added comments
+            10:25pm, 1 hour    , created room connection function in room and worldcreation function
+  10/24/24, 9:35 am, 45 minutes, worked on adSding player to rooms and player movement
+            10:06pm, 30 minutes, created a if statement that added any player currently in the game to a random room
+  10/25/24, 2:00 pm, 50 minutes, worked on adding player to room logic and currentplayer/currentroom functions
+  10/28/24, 2:00 pm, 50 minutes, worked on starting of game and added logic to the player movements
+            10:35pm, 30 minutes, added logic to the player movements
+  10/29/24, 9:43 am, 1 hour    , worked on running game function
+            11:23pm, 20 minutes, worked on player movement
+  10/30/24, 2:00 pm, 50 minutes, reworked world creation
+            10:14pm, 30 minutes, worked on removing player to add to an adjacent room
+  11/01/24, 10:30pm, 1 hour    , finished player movement
+  11/02/24, 1:44 pm, 40 minutes, fixed some syntax errors and reorganized the code
+  11/03/24, 10:30pm, 1 hour    , wrote function to go back to previous room
+  11/04/24, 2:02 pm, 50 minutes, reworked map format to be more of stage level type game & created Item.cs, ItemI.cs
+  11/06/24, 2:00 pm, 50 minutes, worked on door locking and unlocking
+  11/07/24, 9:45 pm, 45 minutes, worked on gameClock & Decorator w/ items
+  11/08/24, 2:00 pm, 50 minutes, worked on items to add to game
+  11/10/24, 9:30 pm, 30 minutes, worked on items functions
+  11/11/24, 2:00 pm, 50 minutes, worked on item functions
+            10:30pm, 1 hour    , worked on more item functions and reworked map a little
+  11/12/24, 9:30 am, 1.25 hour , worked on item functions & inventory
+            3:25 pm, 2 hours   , create currentPlayer function to simplify commands
+            10:20pm, 3.5 hours , created inventories classes, added items to be created, & fixed some bugs
+  11/13/24, 2:00 pm, 50 minutes, worked on dropping item function
+            10:30pm, 2 hours   , fixed dropping item function to drop items within inventory.
+  11/14/24, 9:30 am, 45 minutes, worked on adding items into rooms
+            10:30pm, 30 minutes, worked on randomizing items within room
+  11/15/24, 2:00 pm, 50 minutes, worked on picking up & dropping items
+            10:30pm, 1 hour    , fixed some null errors with commands & added a checkinventory function
+  11/16/24, 12:22pm, 1 hour    , randomized items and worked on spawn rates
+  11/17/24, 11:00pm, 1 hour    , worked on decorators
+  11/18/24, 2:00 pm, 50 minutes, added more parameters to pickup & drop item
+  11/20/24, 2:00 pm, 50 minutes, reworked rooms and added currency and shield
+  11/21/24, 10:21pm, 1 hour    , added stages to separate rooms
+  11/22/24, 2:00 pm, 50 minutes, finished reworking map
+            11:15pm, 2 hours   , finished previous map tracking and worked on item decorators/spawning
+  11/23/24, 11:30pm, 2 hours   , reworked item creation and spawn rates
+  11/24/24, 10:30pm, 1 hour    , worked on decorators and effects of items
+  11/25/24, 10:00pm, 1 hour    , worked on decorators and effects of items
+  11/26/24, 10:41pm, 3 hours   , worked on items functions, containers, and locked doors
+  11/27/24, 11:24pm, 4 hours   , worked on items use/equip/unequip items, fixing dropping items with a string connector to allow multiple words for item names
+  11/28/24, 2:30 pm, 30 minutes, added weight functionality to inventory
+            10:35pm, 2 hours   , finished all items functionality and inventories. Now need to work on npcs, battle, and bosses and im done
+  11/30/24, 10:45pm, 2 hours   , removed items from boss & shop rooms, worked on enemy spawning and different abilities
+  12/01/24, 10:25pm, 4 hours   , make code more compact by removing null checks and replacing with ? statements
+  12/02/24, 2:00 pm, 50 minutes, refined battle functions
+  12/03/24, 10:14pm, 3 hours   , refined bosses and moved info to other files to shorten and simplify the commandfunctions
+            7:20pm , 8 hours & 27 minutes, refined entire game. specifically teleporter, items, creation, and stages
+TO DO LIST -
+    * rework map ✅
+    * map previous room ✅
+    * setup item spawning in rooms ✅
+    * item weight management ✅
+    * Equip/backpacks/shield ✅
+    * setup item usage            ✅ like half done just gotta add more items 
+    * item crafting ✅
+    * setup locked doors for boss room
+    * create containers for items use the same key locked door method for this also
+    * teleporter in boss room
+    * add shop keeper npc/room ✅
+    * setup enemy npc ✅
+    * battle system ✅
+    * quest system (ex. greet shop keeper, kill boss, craft a shotgun, own a legendry item) have reward with scrap
+      - have a checkforquest function that checks to see if quest has been completed for basically every action tht the player does
+    * Save game / load game
+
+Alex Wilson - 
+  9/30/24,  2:15pm, 1 hour, Project Planning
+  10/2/24,  2:00pm, 1 hour 10 minutes, Creating classes
+  10/7/24,  2:30pm, 20 minutes, creating classes
+  10/9/24,  2:00pm, 50 minutes, worked on the player & game creation
+  10/9/24,  4:30pm, 10 minutes, added to the planning Doc
+  10/11/24, 2:00pm, 50 minutes, Worked on player & game creation
+  10/14/24, 2:00pm, 50 minutes, Worked on RoomsInfo class
+  10/18/24, 1:52pm, 1 hour 2 minutes, worked on room data types, and room creation functions
+  10/21/24, 2:00pm, 50 minutes, worked on Parser and CommandFunctions
+  10/22/24, 2:00pm, 50 minutes, worked on the rooms description in RoomsInfo
+  10/25/24, 2:00pm, 50 minutes, worked on the rooms description in RoomsInfo and on the planning Doc
+  10/28/24, 2:00pm, 50 minutes, worked on the rooms description in RoomsInfo
+  10/30/24, 2:00pm, 50 minutes, worked on the rooms description in RoomsInfo
+  11/04/24, 2:00pm, 50 minutes, worked on the store rooms
+  11/06/24, 2:00pm, 50 minutes, worked on the store rooms and boss designs
+  11/08/24, 2:00pm, 50 minutes, worked on game item ideas
+  11/11/24, 2:00pm, 50 minutes, worked on game item ideas
+  11/13/24, 2:00pm, 50 minutes, worked on game item ideas
+  11/15/24, 2:00pm, 50 minutes, worked on game item ideas and Bosses
+  11/18/24, 2:00pm, 50 minutes, Worked on game items and Bosses
+  11/20/24, 2:00pm, 50 minutes, Worked on Bosses
+  11/22/24, 2:00pm, 50 minutes, Worked on Bosses and enemies
+  12/02/24, 2:00pm, 50 minutes, worked on keys
+  12/03/24, 7:20pm, 8 hours & 27 minutes, worked on enimies, save & load
+
+Game Genre
+---------------------------------------------------------------------------------------------
+Fantasy
+Survival
+Dungeon Crawler / Escape ✅
+
+
+Name/Game Ideas
+---------------------------------------------------------------------------------------------
+Dungeon Crawler
+Prison Escape
+Death Game
+Offbrand Backrooms ✅
+Airplane Crash Simulator
+
+
+Commands
+---------------------------------------------------------------------------------------------
+createCharacter <name> <age> <gender> - creates player
+pickupItem <itemName> - picks up item near player
+dropItem <itemName> - drops item in inventory
+checkInventory - would list items in inventory, and show the total weight of the items
+                 including armor/wepons.
+equip <itemName> - equips whatever item you have in inventory.
+checkStats - would list health, hunger, stamina etc...
+interact - interact with what's near the player (including npcs)
+checkBalance - checks balance of player
+attack - attacks the target with the characters wepon (use the wepons damage number to deal damage)
+defend - redues the amount of damage taken(if character has shield take even less damage)
+useItem <itemName> - use an item such (ex; health potion to increass your health)
+flee - have a chance to flee an encounter/fight
+save <saveName> - saves the current game
+load <saveName> - loads the last save
+
+searchRoom - searches room for items that may be picked up
+
+
+Games Decription Ideas
+---------------------------------------------------------------------------------------------
+
+Backrooms -
+You play as a researcher working for a secret organization known as the Foundation, whose mission is to explore, document, and contain anomalous entities, objects, and locations. After a routine exploration mission goes wrong, you find yourself trapped in The Backrooms, an infinite, labyrinthine like structure filled with unsettling entities and unknown dangers. Your goal is to escape while enountering and documenting creatures. Along the way, you’ll pass other lost agents, rogue SCPs (enemies), and powerful entities, all while uncovering hidden truths about the Backrooms and its connection to the Foundation.
+
+Features/Ideas:
+- Inventory Size should be a minimum of 7.
+- More Items in inventory, slower player is.
+- Player could pick backpack up which would increase inventory size.
+- if doorway is boarded up you can use crowbar to pry.
+
+
+Enemy's info
+---------------------------------------------------------------------------------------------
+Health -
+  Low level enemies health  : 15 - 25
+  medium level enemy health : 35 - 40
+  Boss level enemy health   : 65 - 200
+  Passive npc health        :  5 - 10    [doesn't fight player back even if attacked]
+
+------------------------------------------------------------------------------------------------------------------------------
+| TYPE                   | HEALTH     | ATTACK CHANCE | DEFEND CHANCE | NOTES                                                |
+|------------------------|------------|---------------|---------------|------------------------------------------------------|
+| **Low-Level Enemy**    | 15-25 HP   | 40%-60%       | 40%-60%       | Weakest tier of enemies with basic attack and block  |
+|    L1                  | 15 HP      | 50%           | 50%           | Punch: 3 dmg, Block: -2 dmg                          |
+|    L2                  | 20 HP      | 40%           | 60%           | Punch: 4 dmg, Block: -2 dmg                          |
+|    L3                  | 25 HP      | 60%           | 40%           | Punch: 3 dmg, Block: -2 dmg                          |
+| **Medium-Level Enemy** | 35-40 HP   | 40%-60%       | 40%-60%       | Tougher enemies with moderate attack and defense     |
+|    M1                  | 35 HP      | 60%           | 40%           | Punch: 4 dmg, Block: -2 dmg                          |
+|    M2                  | 38 HP      | 50%           | 50%           | Punch: 5 dmg, Block: -2 dmg                          |
+|    M3                  | 40 HP      | 40%           | 60%           | Punch: 6 dmg, Block: -2 dmg                          |
+| **Passive NPC**        | 5-10 HP    | 0%            | 100%          | Non-combatant NPC that does not fight back           |
+|    NPC                 | 6 HP       | 0%            | 100%          | Punch: 0 dmg, Block: Failed                          |
+|                        |            |               |               | On Death: Displays a message to the player           |
+|                        |            |               |               | Message:                                             |
+|                        |            |               |               | "Never gonna give you up, Never gonna let you down"  |
+|                        |            |               |               | "Never gonna run around and desert you"              |
+|                        |            |               |               | "Never gonna make you cry, Never gonna say goodbye"  |
+|                        |            |               |               | "Never gonna tell a lie and hurt you"                |
+------------------------------------------------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| NAME                      | HEALTH | ATTACK CHANCE | DEFEND CHANCE | PASSIVE                                | NOTES                                     |
+|---------------------------|--------|---------------|---------------|----------------------------------------|-------------------------------------------|
+| **Default Boss**          | 65     | 50%           | 50%           | Starts battle with low-level enemy      | Punch: 7 dmg, Help: 10% spawn            |
+|                           |        |               |               |                                         | Block: -2 dmg, Dodge: 25%                |
+| **Utility Boss**          | 80     | 25%           | 75%           | Immune to negative effects              | Wrench: 10 dmg, Repair: 1-10             |
+|                           |        |               |               |                                         | Block: 20%, Enhance: +5 dmg              |
+| **Apartments Boss**       | 90     | 40%           | 60%           | Forces extra consumable use             | Appliance: 15 dmg, Mold: 2/turn          |
+|                           |        |               |               |                                         | Pest: -accuracy, Lock: -5 dmg            |
+| **Pool Boss**             | 100    | 60%           | 40%           | Reduces melee weapon damage             | Chlorine: 2 turns, Water: 20 dmg         |
+|                           |        |               |               |                                         | Shed: +1-20 HP, Block: -10 dmg           |
+| **Ikea Boss**             | 120    | 50%           | 50%           | Missed attacks buff next by +5 dmg      | Meatball: 15 dmg + heal, Karen: 25 dmg   |
+|                           |        |               |               |                                         | Authority: -5 atk, Shield: 20%           |
+| **Arcade Boss**           | 150    | 60%           | 40%           | 10% chance for player attack to "glitch"| Token: +1 token/20 dmg, Circuit: +30/-10 |
+|                           |        |               |               |                                         | Heal: +5/token                           |
+| **Snack Boss**            | 170    | 40%           | 60%           | Attack/defend ratio shifts at half HP   | Snack: 25 dmg, Crunch: 30 dmg            |             |
+|                           |        |               |               |                                         | Sugar Rush: -10 dmg for 3 turns          |
+| **Car Boss**              | 200    | 70%           | 30%           | Reduces all damage by 5                 | Transmission: 30 dmg, Run Over: 35 dmg   |
+|                           |        |               |               |                                         | Shift: swap ratios, Lock: immune         |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+Game Items
+--------------------------------------------------------------------------------------------- 
+
+### **Weapons**  
+------------------------------------------------------------------------------------------------------------------------
+| NAME                             | WEIGHT | COST TO SELL | COST TO BUY | DAMAGE | NOTES                              |
+|----------------------------------|--------|--------------|-------------|--------|------------------------------------|
+| **Sword of Null (Legendary)      | 3lbs   | 1,000 scrap  | FOUND ONLY  |  60    | Only one spawns in the world       |
+| **Shotgun (Legendary)**          | 6lbs   | 900 scrap    | CRAFT ONLY  |  50    | Must find ammo, can't buy          |
+| **Sharpened Katana (Epic)**      | 2.5lbs | 400 scrap    | 650 scrap   |  40    |                                    |
+| **Rusty Pistol (Epic)**          | 2lbs   | 400 scrap    | 600 scrap   |  30    | Must find or buy ammo              |
+| **Molotov Cocktail (Epic)**      | 2lbs   | 250 scrap    | 400 scrap   |  25    | Only one use                       |
+| **Barbed Baseball Bat (Rare)**   | 2lbs   | 300 scrap    | 450 scrap   |  18    | -                                  |
+| **Crossbow (Rare)**              | 6lbs   | 350 scrap    | 500 scrap   |  30    | Uses bolts which are bought/found  |
+| **Flare Gun (Rare)**             | 1lbs   | 125 scrap    | 200 scrap   | STUN   | only has 1 shot                    |______________
+| **Taser (Rare)**                 | .15lbs |  80 scrap    | 120 scrap   | STUN   | stuns enemies for 2 rounds battery dies after use | 
+| **Rusty Sword (Rare)**           | 4lbs   | 150 scrap    | 250 scrap   |  20    | -                                   ______________|
+| **Rusted Machete (Uncommon)**    | 5lbs   | 125 scrap    | 125 scrap   |  18    | -                                  |
+| **Fire Axe (Uncommon)**          | 4lbs   | 175 scrap    | 175 scrap   |  20    | -
+| **Steel Baseball Bat (Uncommon)  | 2lbs   | 125 scrap    | 125 scrap   |  15    | -
+| **Hunting Knife (Uncommon)       | .5lbs  | 120 scrap    | 120 scrap   |  15    | -
+| **Pool Stick (Common)**          | 2lbs   |  80 scrap    |  80 scrap   |  12    | -                                  |
+| **Wooden Board (Common)**        | 1.5lbs |  30 scrap    |  50 scrap   |  10    | -                                  |
+| **Rusty Pipe (Common)**          | 1lb    |  15 scrap    |  30 scrap   |   8    | -                                  |
+| **Kitchen Knife (Common)**       | 1lbs   |  10 scrap    |  20 scrap   |   6    | -                                  |
+| **Rusty Shovel (Common)**        | 3lbs   |   5 scrap    |  10 scrap   |   4    | -                                  |
+| **Broken Bottle (Common)**       | .15lbs |   3 scrap    |   5 scrap   |   3    | -                                  |
+| **Bag of Glass Shards (Common)** | .15lbs |   3 scrap    |   5 scrap   |  STUN  | -                                  |
+------------------------------------------------------------------------------------------------------------------------
+
+---
+
+### **Tools**  
+------------------------------------------------------------------------------------------------------------------------------------------------
+| NAME                          | WEIGHT  | COST TO SELL | COST TO BUY | USE CASE                                                              |
+|-------------------------------|---------|--------------|-------------|-----------------------------------------------------------------------|
+| **Strange Charm (Legendary)** | 1lbs    | 1,000 scrap  | CANT BUY    | Permanently increases player's attack (+10 damage)                    |
+| **Flashlight (Rare)**         | .5lbs   | 100 scrap    | 140 scrap   | Allows player to search for more items                                |
+| **Lockpicks (Uncommon)**      | .25lbs  | 15 scrap     | 25 scrap    | Can be used to unlock items locked containers 25% chance of breaking  |
+| **bobby Pin Box (Common)**    | .5lbs   | 50 scrap     | 75 scrap    | Used to unlock doors, crates, etc. 50% chance of breaking             |
+| **Damaged Crowbar (Common)**  | 2lbs    | 25 scrap     | 40 scrap    | Can only be used twice                                                |
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+---
+
+### **Wearables**  
+---------------------------------------------------------------------------------------------------------------------------
+| NAME                           | WEIGHT  | COST TO SELL | COST TO BUY | EFFECT                                          | 
+|--------------------------------|---------|--------------|-------------|-------------------------------------------------|
+| **Combat Armor (Legendary)**   | 5lbs    | 700 scrap    | 800 scrap   | Shield up by 100+                               | 
+| **Leather Jacket (Epic)**      | 3.5lbs  | 500 scrap    | 650 scrap   | Shield up by 75+                                |                                    
+| **Tactical Vest (Epic)**       | 4lbs    | 600 scrap    | 750 scrap   | Shield up by 85+                                |                                   
+| **Reinforced Armor (Rare)**    | 4.5lbs  | 400 scrap    | 550 scrap   | Shield up by 60+                                |                                    
+| **Bulletproof Vest (Rare)**    | 3.75lbs | 450 scrap    | 600 scrap   | Shield up by 50+                                |                                    
+| **Kevlar Jacket (Uncommon)**   | 2.5lbs  | 180 scrap    | 250 scrap   | Shield up by 25+                                |                                    
+| **Tactical Shirt (Uncommon)**  | 2lbs    | 150 scrap    | 220 scrap   | Shield up by 20+                                |                       
+| **Sports Armor (Common)**      | 1.5lbs  | 60 scrap     | 90 scrap    | Shield up by 10+                                |                   
+| **Padded Shirt (Common)**      | 0.5lbs  | 30 scrap     | 50 scrap    | Shield up by 5+                                 |                       
+| **Dirty T-Shirt (Common)**     | 0.25lbs | 15 scrap     | 30 scrap    | No shield protection                            |            
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+### **Inventory Increase**  
+------------------------------------------------------------------------------------------------------------------------
+| NAME                                      | WEIGHT | COST TO SELL | COST TO BUY | EFFECT                             |  
+|-------------------------------------------|--------|--------------|-------------|------------------------------------|
+| **Titan Storage Pack (Legendary)**        | 6lbs   | 1500 scrap   | 2000 scrap  | Increases carry weight by 70lbs    |
+| **Grand Explorer's Backpack (Legendary)** | 5lbs   | 1200 scrap   | 1600 scrap  | Increases carry weight by 50lbs    |
+| **Mega Storage Bag (Legendary)**          | 4.5lbs | 1000 scrap   | 1300 scrap  | Increases carry weight by 40lbs    |
+| **Explorer's Backpack (Epic)**            | 3lbs   | 800 scrap    | 1000 scrap  | Increases carry weight by 30lbs    |
+| **Adventure Bag (Rare)**                  | 2lbs   | 400 scrap    | 600 scrap   | Increases carry weight by 20lbs    |
+| **Outdoor Rucksack (Rare)**               | 2.25lbs| 450 scrap    | 700 scrap   | Increases carry weight by 18lbs    |
+| **Basic Backpack (Uncommon)**             | 1.25lbs| 100 scrap    | 150 scrap   | Increases carry weight by 8lbs     |
+| **Cargo Shorts (Common)**                 | 0.75lbs| 50 scrap     | 85 scrap    | Increases carry weight by 6lbs     |
+| **Canvas Bag (Common)**                   | 0.75lbs| 30 scrap     | 50 scrap    | Increases carry weight by 5lbs     |
+| **Fanny Pack (Common)**                   | 0.5lbs | 20 scrap     | 35 scrap    | Increases carry weight by 3lbs     |
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+### **Consumables**  
+--------------------------------------------------------------------------------------------------------------------------------
+| NAME                          | WEIGHT  | COST TO SELL | COST TO BUY | HEAL AMOUNT                                           |
+|-------------------------------|---------|--------------|-------------|-------------------------------------------------------|
+| **Burger (Legendary)**        | .25lbs  | 1000 scrap   | 1500 scrap  | Restores 100 health                                   |
+| **Antidote (Epic)**           | .2lbs   | 400 scrap    | 600 scrap   | Restores 80 health                                    |
+| **Energy Drink (Rare)**       | .2lbs   | 250 scrap    | 350 scrap   | Restores 60 health                                    |
+| **Bandages (Uncommon)**       | .75lbs  | 100 scrap    | 150 scrap   | Restores 40 health                                    |
+| **Painkillers (Uncommon)**    | .1lbs   | 75 scrap     | 125 scrap   | Restores 30 health                                    |
+| **Canned Soup (Common)**      | .25lbs  | 50 scrap     | 100 scrap   | Restores 20 health                                    |
+| **Water Bottle (Common)**     | .05lbs  | 25 scrap     | 50 scrap    | Restores 15 health                                    |
+| **Ikea Meatball (Common)**    | .25lbs  | 30 scrap     | 60 scrap    | Restores 25 health                                    |
+| **Gum (Common)**              | .05lbs  | 10 scrap     | 20 scrap    | Restores 10 health                                    |
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+---
+
+### **Miscellaneous**  
+-------------------------------------------------------------------------------------------------------------------------------
+| NAME                              | WEIGHT  | COST TO SELL | COST TO BUY | NOTES                                            |
+|-----------------------------------|---------|--------------|-------------|--------------------------------------------------|
+| **Handful of Old Coins (Common)** | .15lbs  | 5 scrap      | 10 scrap    | Can be used to purchase snacks                   |
+| **Shotgun Barrel (Epic)**         |  1lbs   | 300 scrap    | CANT BUY    | Part for crafting the shotgun                    |
+| **Shotgun Trigger (Epic)**        | .25lbs  | 300 scrap    | CANT BUY    | Part for crafting the shotgun                    |
+| **Shotgun Stock (Epic)**          |  1lbs   | 300 scrap    | CANT BUY    | Part for crafting the shotgun                    |
+| **Shotgun Shell (Epic)**          | .05lbs  | 50 scrap     | N/A         | Must find                                        |
+| **Pistol Round (Rare)**           | .05lbs  | 40 scrap     | 65          | Must find or buy only one bullet                 |
+| **Pepper Spray (Uncommon)**       | .15lbs  | 70 scrap     | 90 scrap    | Increases the chance to flee from battle         |
+| **Glass Ammo (Common)**           | .05lbs  | 5 scrap      | 10 scrap    | Ammo for small firearms or thrown as projectiles |
+| **Batteries (Common)**            | .15lbs  | 5 scrap      | 25 scrap    | Can be used for tools like the flashlight        |
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+Spawn Rate For Items
+---------------------------------------------------------------------------------------------------------------
+| **Rarity**   | **Percentage** | **Total Items**  | **Example Items**                | **Quantity to Spawn** |
+|--------------|----------------|------------------|----------------------------------|-----------------------|
+| **Common**   | 45%            | 72 items         | Burger, Water Bottle, Bandages   | 5-7 items each        |
+| **Uncommon** | 25%            | 30 items         | Pepper Spray, Sunglasses         | 4-6                   |
+| **Rare**     | 15%            | 9  items         | Crossbow, Kevlar Vest            | 3-5                   |
+| **Epic**     | 10%            | 10 items         | Shotgun Barrel, Leather Jacket   | 2-4                   | 
+| **Legendary**| 5%             | 6 items          | Strange Charm, Shotgun Barrel    | 1-2 item each         |
+---------------------------------------------------------------------------------------------------------------
+
+
+random number from 1-100
+1-45: Common (45%)
+46-70: Uncommon (25%)
+71-85: Rare (15%)
+86-95: Epic (10%)
+96-100: Legendary (5%)
+
+when item is selected it gets added to room
+
+two randoms one to select rarity and one to select items randomly

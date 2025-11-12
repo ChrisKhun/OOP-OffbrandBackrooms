@@ -1,0 +1,14 @@
+C:\Users\asian\Desktop\Coding Project\OffBrandBackrooms\obj\Debug\net8.0\OffBrandBackrooms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asian\Desktop\Coding Project\OffBrandBackrooms\obj\Debug\net8.0\OffBrandBackrooms.AssemblyInfoInputs.cache
+C:\Users\asian\Desktop\Coding Project\OffBrandBackrooms\obj\Debug\net8.0\OffBrandBackrooms.AssemblyInfo.cs
+C:\Users\asian\Desktop\Coding Project\OffBrandBackrooms\obj\Debug\net8.0\OffBrandBackrooms.csproj.CoreCompileInputs.cache
+C:\Users\asian\Desktop\Coding Project\OffBrandBackrooms\bin\Debug\net8.0\OffBrandBackrooms.exe
+C:\Users\asian\Desktop\Coding Project\OffBrandBackrooms\bin\Debug\net8.0\OffBrandBackrooms.deps.json
+C:\Users\asian\Desktop\Coding Project\OffBrandBackrooms\bin\Debug\net8.0\OffBrandBackrooms.runtimeconfig.json
+C:\Users\asian\Desktop\Coding Project\OffBrandBackrooms\bin\Debug\net8.0\OffBrandBackrooms.dll
+C:\Users\asian\Desktop\Coding Project\OffBrandBackrooms\bin\Debug\net8.0\OffBrandBackrooms.pdb
+C:\Users\asian\Desktop\Coding Project\OffBrandBackrooms\obj\Debug\net8.0\OffBrandBackrooms.dll
+C:\Users\asian\Desktop\Coding Project\OffBrandBackrooms\obj\Debug\net8.0\refint\OffBrandBackrooms.dll
+C:\Users\asian\Desktop\Coding Project\OffBrandBackrooms\obj\Debug\net8.0\OffBrandBackrooms.pdb
+C:\Users\asian\Desktop\Coding Project\OffBrandBackrooms\obj\Debug\net8.0\OffBrandBackrooms.genruntimeconfig.cache
+C:\Users\asian\Desktop\Coding Project\OffBrandBackrooms\obj\Debug\net8.0\ref\OffBrandBackrooms.dll
